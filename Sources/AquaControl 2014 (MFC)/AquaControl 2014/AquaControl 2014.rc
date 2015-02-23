@@ -1,0 +1,736 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\AquaControl2014.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\AquaControl 2014.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_AQUACONTROL2014_DIALOG DIALOGEX 0, 0, 430, 330
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "AquaController 2014"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB,"SysTabControl32",0x0,7,7,416,197
+    CONTROL         "Custom1",IDC_CUSTOM_GRAF1,"LINE_CHART_CTRL",WS_TABSTOP,37,228,99,58
+    CONTROL         "Custom2",IDC_CUSTOM_GRAF2,"LINE_CHART_CTRL",WS_TABSTOP,172,228,99,58
+    GROUPBOX        "PH :",IDC_STATIC_DINAMIC_PH,166,217,112,75
+    LTEXT           "Обновление данных графиков, с. :",IDC_STATIC,21,299,119,8
+    GROUPBOX        "Температура :",IDC_STATIC_DINAMIC_TEMP,31,217,112,75
+    GROUPBOX        "Динамика изменения параметров воды :",IDC_STATIC_DINAMIC,7,204,416,112
+    CONTROL         "Custom2",IDC_CUSTOM_GRAF3,"LINE_CHART_CTRL",WS_TABSTOP,307,228,99,58
+    GROUPBOX        "Redox :",IDC_STATIC_DINAMIC_REDOX,301,217,112,75
+    EDITTEXT        IDC_EDIT_SYSTEM_TIME,375,297,38,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Системное время :",IDC_STATIC,305,299,64,8
+    LTEXT           "Пустоводов С.А. 2014",IDC_STATIC,347,318,76,8
+    LTEXT           "20.0",IDC_STATIC,14,281,16,8
+    LTEXT           "40.0",IDC_STATIC,14,225,16,8
+    LTEXT           "4.0",IDC_STATIC,153,281,12,8
+    LTEXT           "10.0",IDC_STATIC,149,225,16,8
+    LTEXT           "0",IDC_STATIC,292,281,8,8
+    LTEXT           "0.8",IDC_STATIC,287,225,12,8
+    LTEXT           "30.0",IDC_STATIC,14,254,16,8
+    LTEXT           "7.0",IDC_STATIC,153,254,12,8
+    LTEXT           "0.4",IDC_STATIC,287,254,12,8
+    CONTROL         "",IDC_SLIDER_GRAF,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,138,296,156,14
+END
+
+IDD_PAGE1 DIALOGEX 0, 0, 488, 197
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Т1 :",IDC_STATIC,22,22,14,8
+    LTEXT           "Т2 :",IDC_STATIC,22,38,14,8
+    LTEXT           "Т3 :",IDC_STATIC,22,54,14,8
+    EDITTEXT        IDC_EDIT_T1,41,20,27,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_T2,41,36,27,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_T3,41,52,27,12,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "Температура :",IDC_STATIC_TEMP,7,7,85,64
+    LTEXT           "`C",IDC_STATIC,71,22,10,8
+    LTEXT           "`C",IDC_STATIC,71,38,10,8
+    LTEXT           "`C",IDC_STATIC,71,54,10,8
+    GROUPBOX        "Параметры воды :",IDC_STATIC_WATER_PARAM,7,71,85,51
+    LTEXT           "PH :",IDC_STATIC,22,87,14,8
+    LTEXT           "Redox:",IDC_STATIC,17,103,32,9
+    EDITTEXT        IDC_EDIT_PH,41,85,27,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_REDOX,41,101,27,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "е.и.",IDC_STATIC,71,87,14,8
+    LTEXT           "V",IDC_STATIC,71,103,8,8
+    GROUPBOX        "Управление нагрузкой :",IDC_STATIC_DEVICE_SELECT,96,7,126,170
+    LTEXT           "Освещение 1 :",IDC_STATIC,106,22,50,8
+    LTEXT           "Освещение 2 :",IDC_STATIC,106,37,50,8
+    LTEXT           "Освещение 3 :",IDC_STATIC,106,52,50,8
+    LTEXT           "Освещение 4 :",IDC_STATIC,106,67,50,8
+    LTEXT           "Компрессор :",IDC_STATIC,106,82,45,8
+    LTEXT           "Нагреватель :",IDC_STATIC,106,97,50,8
+    LTEXT           "Клапан СО2 :",IDC_STATIC,106,112,46,8
+    LTEXT           "Помпа :",IDC_STATIC,106,127,26,8
+    LTEXT           "Кулера 12 В :",IDC_STATIC,106,142,46,8
+    EDITTEXT        IDC_EDIT_LAMP1,162,20,38,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_LAMP2,162,35,38,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_LAMP3,162,50,38,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_LAMP4,162,65,38,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_COMPRES,162,80,38,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_HEATER,162,95,38,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_CO2,162,110,38,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_POMPA,162,125,38,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_COOLER,162,140,38,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SLIDER_COOLER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,102,155,100,15
+    CONTROL         "",IDC_CHECK_LAMP1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,204,22,16,10
+    CONTROL         "",IDC_CHECK_LAMP2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,204,37,16,10
+    CONTROL         "",IDC_CHECK_LAMP3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,204,52,16,10
+    CONTROL         "",IDC_CHECK_LAMP4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,204,67,16,10
+    CONTROL         "",IDC_CHECK_COMPRES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,204,82,16,10
+    CONTROL         "",IDC_CHECK_HEATER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,204,97,16,10
+    CONTROL         "",IDC_CHECK_CO2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,204,112,16,10
+    CONTROL         "",IDC_CHECK_POMPA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,204,127,16,10
+    CONTROL         "",IDC_CHECK_COOLER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,204,142,16,10
+    LTEXT           "%",IDC_STATIC,204,156,8,8
+    GROUPBOX        "Время (DS1307) :",IDC_STATIC_DS1307,7,121,85,56
+    EDITTEXT        IDC_EDIT_HOUR,17,144,18,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_MIN,41,144,18,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_SEC,65,144,18,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Часы :",IDC_STATIC,17,134,23,8
+    LTEXT           "мин :",IDC_STATIC,43,134,18,8
+    LTEXT           "сек :",IDC_STATIC,65,134,17,8
+    PUSHBUTTON      "Синхронизировать",IDC_BUTTON_SYNC,14,159,72,13
+    PUSHBUTTON      "Открыть",IDC_OPEN_PORT,230,22,47,14
+    PUSHBUTTON      "Закрыть",IDC_CLOSE_PORT,230,38,47,14
+    PUSHBUTTON      "Порты",IDC_FIND_PORT,230,54,47,14
+    LTEXT           "Порт :",IDC_STATIC,288,25,22,8
+    LTEXT           "Скорость :",IDC_STATIC,288,41,38,8
+    LTEXT           "№ портов :",IDC_STATIC,288,57,40,8
+    COMBOBOX        IDC_COMBO_PORT,329,24,48,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_BAUDRATE,337,40,40,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NUM_PORTS,337,56,40,12,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "Настройки COM-порта :",IDC_STATIC_COM,225,7,177,67
+    LTEXT           "com",IDC_STATIC,381,25,14,8
+    LTEXT           "kbit/s",IDC_STATIC,381,41,18,8
+    LTEXT           "N",IDC_STATIC,381,57,8,8
+    GROUPBOX        "Отключить подсветку ЖКИ :",IDC_STATIC_LED,225,75,177,31
+    LTEXT           "Отключение LED с :",IDC_STATIC,235,89,68,8
+    LTEXT           "до",IDC_STATIC,319,89,10,8
+    EDITTEXT        IDC_EDIT_LED_START,330,87,13,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LED_STOP,304,87,13,12,ES_AUTOHSCROLL
+    LTEXT           "ч.",IDC_STATIC,345,89,8,8
+    GROUPBOX        "Отключить кулера :",IDC_STATIC_COOLER,225,107,177,30
+    LTEXT           "до",IDC_STATIC,319,120,10,8
+    EDITTEXT        IDC_EDIT_COOLER_START,330,118,13,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COOLER_STOP,304,118,13,12,ES_AUTOHSCROLL
+    LTEXT           "ч.",IDC_STATIC,345,120,8,8
+    GROUPBOX        "Сохранить настройки в EEPROM :",IDC_STATIC_OPTION,225,139,177,38
+    PUSHBUTTON      "Записать EEPROM",IDC_BUTTON_SAVE_SEND,266,154,95,14
+    LTEXT           "Отключение с :",IDC_STATIC,235,120,54,8
+    PUSHBUTTON      "Установить",IDC_BUTTON_LED_SET,353,85,46,14
+    PUSHBUTTON      "Установить",IDC_BUTTON_COOLER_SET,353,116,46,14
+END
+
+IDD_PAGE2 DIALOGEX 0, 0, 412, 203
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Установить температуру :",IDC_CHECK_TEMP_MODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,22,103,10
+    EDITTEXT        IDC_EDIT_TEMP_SET,122,21,26,12,ES_AUTOHSCROLL
+    LTEXT           "Порог срабатывания :",IDC_STATIC,28,39,76,8
+    EDITTEXT        IDC_EDIT_TEMP_POROG,122,37,26,12,ES_AUTOHSCROLL
+    LTEXT           "Мощность кулеров :",IDC_STATIC,28,54,70,8
+    CONTROL         "",IDC_SLIDER_COOLER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,22,69,126,14
+    GROUPBOX        "Температурный режим :",IDC_STATIC_TEMP_MODE,7,7,162,83
+    LTEXT           "`C",IDC_STATIC,151,23,10,8
+    LTEXT           "`C",IDC_STATIC,151,39,8,8
+    LTEXT           "%",IDC_STATIC,151,71,8,8
+    GROUPBOX        "PH/CO2 :",IDC_STATIC_PH_MODE,172,7,167,83
+    CONTROL         "Включение электроклапана CO2 :",IDC_CHECK_CO2_MODE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,183,22,132,10
+    EDITTEXT        IDC_EDIT_PH_HIGH,293,38,26,12,ES_AUTOHSCROLL
+    LTEXT           "Подача CO2 при PH = ",IDC_STATIC,216,40,74,8
+    LTEXT           "е.и.",IDC_STATIC,322,40,13,8
+    EDITTEXT        IDC_EDIT_PH_LOW,293,53,26,12,ES_AUTOHSCROLL
+    LTEXT           "Отключение CO2 при PH = ",IDC_STATIC,198,55,92,8
+    LTEXT           "е.и.",IDC_STATIC,322,55,13,8
+    LTEXT           "Отключение CO2 с",IDC_STATIC,186,70,66,8
+    LTEXT           "до",IDC_STATIC,282,70,10,8
+    EDITTEXT        IDC_EDIT_CO2_START,293,68,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CO2_STOP,254,68,26,12,ES_AUTOHSCROLL
+    LTEXT           "ч.",IDC_STATIC,322,70,8,8
+    GROUPBOX        "Вентиляция крышки :",IDC_STATIC_PRODUV_MODE,7,95,162,80
+    CONTROL         "Включить обдув :",IDC_CHECK_PRODUV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,110,77,10
+    LTEXT           "Укажите временные интервалы :",IDC_STATIC,27,127,114,8
+    LTEXT           "Длительность :",IDC_STATIC,27,142,54,8
+    LTEXT           "Период :",IDC_STATIC,27,158,31,8
+    COMBOBOX        IDC_COMBO_PERIOD,96,155,37,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "мин.",IDC_STATIC,137,142,16,8
+    LTEXT           "ч.",IDC_STATIC,137,158,8,8
+    EDITTEXT        IDC_EDIT_PRODUV_DLIT,96,140,28,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_PRODUV_DLIT,"msctls_updown32",UDS_ARROWKEYS,123,140,11,12
+    COMBOBOX        IDC_COMBO_TEMP_SENSOR,305,111,26,12,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Датчика температурного режима :",IDC_STATIC,179,113,120,8
+    GROUPBOX        "Дополнительные параметры :",IDC_STATIC_DOP_PARAM,172,95,167,80
+    LTEXT           "Минимальная мощность кулеров, % :",IDC_STATIC,179,137,128,8
+    EDITTEXT        IDC_EDIT_MIN_POWER_COOLER,308,135,23,12,ES_AUTOHSCROLL
+    GROUPBOX        "Автодолив :",IDC_STATIC_DOLIV,342,7,63,168
+    CONTROL         "Включить",IDC_CHECK_DOLIV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,349,22,50,10
+    PUSHBUTTON      "Порог 1",IDC_BUTTON_POROG1,349,39,48,14
+    PUSHBUTTON      "Порог 2",IDC_BUTTON_POROG2,349,58,48,14
+    CONTROL         "",IDC_PROGRESS_DOLIV,"msctls_progress32",PBS_VERTICAL | WS_BORDER,360,98,27,69
+    LTEXT           "Уровень воды :",IDC_STATIC,349,82,54,8
+    LTEXT           "1",IDC_STATIC,350,94,8,8
+    LTEXT           "2",IDC_STATIC,350,161,8,8
+    PUSHBUTTON      "Считать параметры",IDC_BUTTON_EVENT_PARAM,213,153,85,14
+END
+
+IDD_PAGE3 DIALOGEX 0, 0, 505, 219
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Нагрузка :",IDC_STATIC_DEVICE,7,7,59,156,BS_CENTER
+    LTEXT           "Освещение 1 :",IDC_STATIC,15,29,50,8
+    LTEXT           "Освещение 2 :",IDC_STATIC,15,44,50,8
+    LTEXT           "Освещение 3 :",IDC_STATIC,15,59,50,8
+    LTEXT           "Освещение 4 :",IDC_STATIC,15,74,50,8
+    LTEXT           "Компрессор :",IDC_STATIC,15,89,45,8
+    LTEXT           "Нагреватель :",IDC_STATIC,15,104,50,8
+    LTEXT           "Клапан СО2 :",IDC_STATIC,15,119,46,8
+    LTEXT           "Помпа :",IDC_STATIC,15,134,26,8
+    LTEXT           "Кулера 12 В :",IDC_STATIC,15,149,46,8
+    EDITTEXT        IDC_EDIT_LAMP1_T1_SET,75,27,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LAMP2_T1_SET,75,42,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LAMP3_T1_SET,75,57,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LAMP4_T1_SET,75,72,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COMPRES_T1_SET,75,87,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HEATER_T1_SET,75,102,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CO2_T1_SET,75,117,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MINERAL_T1_SET,75,132,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COOLER_T1_SET,75,147,37,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_LAMP1_T1_SET,"msctls_updown32",UDS_ARROWKEYS,112,27,11,12
+    CONTROL         "",IDC_SPIN_LAMP2_T1_SET,"msctls_updown32",UDS_ARROWKEYS,112,42,11,12
+    CONTROL         "",IDC_SPIN_LAMP3_T1_SET,"msctls_updown32",UDS_ARROWKEYS,112,57,11,12
+    CONTROL         "",IDC_SPIN_LAMP4_T1_SET,"msctls_updown32",UDS_ARROWKEYS,112,72,11,12
+    CONTROL         "",IDC_SPIN_COMPRES_T1_SET,"msctls_updown32",UDS_ARROWKEYS,112,87,11,12
+    CONTROL         "",IDC_SPIN_HEATER_T1_SET,"msctls_updown32",UDS_ARROWKEYS,112,102,11,12
+    CONTROL         "",IDC_SPIN_CO2_T1_SET,"msctls_updown32",UDS_ARROWKEYS,112,117,11,12
+    CONTROL         "",IDC_SPIN_MINERAL_T1_SET,"msctls_updown32",UDS_ARROWKEYS,112,132,11,12
+    CONTROL         "",IDC_SPIN_COOLER_T1_SET,"msctls_updown32",UDS_ALIGNLEFT | UDS_ARROWKEYS,112,147,11,12
+    LTEXT           "Вкл. :",IDC_STATIC,87,17,20,8
+    GROUPBOX        "Таймер 1 :",IDC_STATIC_TIMER1,69,7,110,156,BS_CENTER
+    EDITTEXT        IDC_EDIT_LAMP1_T1_STOP,127,27,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LAMP2_T1_STOP,127,42,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LAMP3_T1_STOP,127,57,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LAMP4_T1_STOP,127,72,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COMPRES_T1_STOP,127,87,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HEATER_T1_STOP,127,102,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CO2_T1_STOP,127,117,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MINERAL_T1_STOP,127,132,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COOLER_T1_STOP,127,147,37,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_LAMP1_T1_STOP,"msctls_updown32",UDS_ARROWKEYS,163,27,11,12
+    CONTROL         "",IDC_SPIN_LAMP2_T1_STOP,"msctls_updown32",UDS_ARROWKEYS,163,42,11,12
+    CONTROL         "",IDC_SPIN_LAMP3_T1_STOP,"msctls_updown32",UDS_ARROWKEYS,163,57,11,12
+    CONTROL         "",IDC_SPIN_LAMP4_T1_STOP,"msctls_updown32",UDS_ARROWKEYS,163,72,11,12
+    CONTROL         "",IDC_SPIN_COMPRES_T1_STOP,"msctls_updown32",UDS_ARROWKEYS,163,87,11,12
+    CONTROL         "",IDC_SPIN_HEATER_T1_STOP,"msctls_updown32",UDS_ARROWKEYS,163,102,11,12
+    CONTROL         "",IDC_SPIN_CO2_T1_STOP,"msctls_updown32",UDS_ARROWKEYS,163,117,11,12
+    CONTROL         "",IDC_SPIN_MINERAL_T1_STOP,"msctls_updown32",UDS_ARROWKEYS,163,132,11,12
+    CONTROL         "",IDC_SPIN_COOLER_T1_STOP,"msctls_updown32",UDS_ARROWKEYS,163,147,11,12
+    LTEXT           "Выкл. :",IDC_STATIC,139,17,26,8
+    EDITTEXT        IDC_EDIT_LAMP1_T2_SET,188,27,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LAMP2_T2_SET,188,42,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LAMP3_T2_SET,188,57,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LAMP4_T2_SET,188,72,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COMPRES_T2_SET,188,87,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HEATER_T2_SET,188,102,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CO2_T2_SET,188,117,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MINERAL_T2_SET,188,132,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COOLER_T2_SET,188,147,37,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_LAMP1_T2_SET,"msctls_updown32",UDS_ARROWKEYS,224,27,11,12
+    CONTROL         "",IDC_SPIN_LAMP2_T2_SET,"msctls_updown32",UDS_ARROWKEYS,224,42,11,12
+    CONTROL         "",IDC_SPIN_LAMP3_T2_SET,"msctls_updown32",UDS_ARROWKEYS,224,57,11,12
+    CONTROL         "",IDC_SPIN_LAMP4_T2_SET,"msctls_updown32",UDS_ARROWKEYS,224,72,11,12
+    CONTROL         "",IDC_SPIN_COMPRES_T2_SET,"msctls_updown32",UDS_ARROWKEYS,224,87,11,12
+    CONTROL         "",IDC_SPIN_HEATER_T2_SET,"msctls_updown32",UDS_ARROWKEYS,224,102,11,12
+    CONTROL         "",IDC_SPIN_CO2_T2_SET,"msctls_updown32",UDS_ARROWKEYS,224,117,11,12
+    CONTROL         "",IDC_SPIN_MINERAL_T2_SET,"msctls_updown32",UDS_ARROWKEYS,224,132,11,12
+    CONTROL         "",IDC_SPIN_COOLER_T2_SET,"msctls_updown32",UDS_ALIGNLEFT | UDS_ARROWKEYS,224,147,11,12
+    LTEXT           "Вкл. :",IDC_STATIC,200,17,20,8
+    GROUPBOX        "Таймер 2 :",IDC_STATIC_TIMER2,182,7,109,156,BS_CENTER
+    EDITTEXT        IDC_EDIT_LAMP1_T2_STOP,239,27,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LAMP2_T2_STOP,239,42,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LAMP3_T2_STOP,239,57,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LAMP4_T2_STOP,239,72,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COMPRES_T2_STOP,239,87,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HEATER_T2_STOP,239,102,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CO2_T2_STOP,239,117,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MINERAL_T2_STOP,239,132,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COOLER_T2_STOP,239,147,37,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_LAMP1_T2_STOP,"msctls_updown32",UDS_ARROWKEYS,275,27,11,12
+    CONTROL         "",IDC_SPIN_LAMP2_T2_STOP,"msctls_updown32",UDS_ARROWKEYS,275,42,11,12
+    CONTROL         "",IDC_SPIN_LAMP3_T2_STOP,"msctls_updown32",UDS_ARROWKEYS,275,57,11,12
+    CONTROL         "",IDC_SPIN_LAMP4_T2_STOP,"msctls_updown32",UDS_ARROWKEYS,275,72,11,12
+    CONTROL         "",IDC_SPIN_COMPRES_T2_STOP,"msctls_updown32",UDS_ARROWKEYS,275,87,11,12
+    CONTROL         "",IDC_SPIN_HEATER_T2_STOP,"msctls_updown32",UDS_ARROWKEYS,275,102,11,12
+    CONTROL         "",IDC_SPIN_CO2_T2_STOP,"msctls_updown32",UDS_ARROWKEYS,275,117,11,12
+    CONTROL         "",IDC_SPIN_MINERAL_T2_STOP,"msctls_updown32",UDS_ARROWKEYS,275,132,11,12
+    CONTROL         "",IDC_SPIN_COOLER_T2_STOP,"msctls_updown32",UDS_ARROWKEYS,275,147,11,12
+    LTEXT           "Выкл. :",IDC_STATIC,252,17,26,8
+    EDITTEXT        IDC_EDIT_LAMP1_T3_SET,300,27,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LAMP2_T3_SET,300,42,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LAMP3_T3_SET,300,57,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LAMP4_T3_SET,300,72,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COMPRES_T3_SET,300,87,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HEATER_T3_SET,300,102,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CO2_T3_SET,300,117,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MINERAL_T3_SET,300,132,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COOLER_T3_SET,300,147,37,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_LAMP1_T3_SET,"msctls_updown32",UDS_ARROWKEYS,336,27,11,12
+    CONTROL         "",IDC_SPIN_LAMP2_T3_SET,"msctls_updown32",UDS_ARROWKEYS,336,42,11,12
+    CONTROL         "",IDC_SPIN_LAMP3_T3_SET,"msctls_updown32",UDS_ARROWKEYS,336,57,11,12
+    CONTROL         "",IDC_SPIN_LAMP4_T3_SET,"msctls_updown32",UDS_ARROWKEYS,336,72,11,12
+    CONTROL         "",IDC_SPIN_COMPRES_T3_SET,"msctls_updown32",UDS_ARROWKEYS,336,87,11,12
+    CONTROL         "",IDC_SPIN_HEATER_T3_SET,"msctls_updown32",UDS_ARROWKEYS,336,102,11,12
+    CONTROL         "",IDC_SPIN_CO2_T3_SET,"msctls_updown32",UDS_ARROWKEYS,336,117,11,12
+    CONTROL         "",IDC_SPIN_MINERAL_T3_SET,"msctls_updown32",UDS_ARROWKEYS,336,132,11,12
+    CONTROL         "",IDC_SPIN_COOLER_T3_SET,"msctls_updown32",UDS_ALIGNLEFT | UDS_ARROWKEYS,336,147,11,12
+    LTEXT           "Вкл. :",IDC_STATIC,312,17,20,8
+    GROUPBOX        "Таймер 3 :",IDC_STATIC_TIMER3,294,7,109,156,BS_CENTER
+    EDITTEXT        IDC_EDIT_LAMP1_T3_STOP,351,27,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LAMP2_T3_STOP,351,42,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LAMP3_T3_STOP,351,57,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LAMP4_T3_STOP,351,72,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COMPRES_T3_STOP,351,87,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HEATER_T3_STOP,351,102,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CO2_T3_STOP,351,117,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MINERAL_T3_STOP,351,132,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COOLER_T3_STOP,351,147,37,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_LAMP1_T3_STOP,"msctls_updown32",UDS_ARROWKEYS,387,27,11,12
+    CONTROL         "",IDC_SPIN_LAMP2_T3_STOP,"msctls_updown32",UDS_ARROWKEYS,387,42,11,12
+    CONTROL         "",IDC_SPIN_LAMP3_T3_STOP,"msctls_updown32",UDS_ARROWKEYS,387,57,11,12
+    CONTROL         "",IDC_SPIN_LAMP4_T3_STOP,"msctls_updown32",UDS_ARROWKEYS,387,72,11,12
+    CONTROL         "",IDC_SPIN_COMPRES_T3_STOP,"msctls_updown32",UDS_ARROWKEYS,387,87,11,12
+    CONTROL         "",IDC_SPIN_HEATER_T3_STOP,"msctls_updown32",UDS_ARROWKEYS,387,102,11,12
+    CONTROL         "",IDC_SPIN_CO2_T3_STOP,"msctls_updown32",UDS_ARROWKEYS,387,117,11,12
+    CONTROL         "",IDC_SPIN_MINERAL_T3_STOP,"msctls_updown32",UDS_ARROWKEYS,387,132,11,12
+    CONTROL         "",IDC_SPIN_COOLER_T3_STOP,"msctls_updown32",UDS_ARROWKEYS,387,147,11,12
+    LTEXT           "Выкл. :",IDC_STATIC,362,17,26,8
+    PUSHBUTTON      "Записать в контроллер",IDC_BUTTON1,310,165,92,14
+    PUSHBUTTON      "Считать с контроллера",IDC_BUTTON_READ_MC,199,165,92,14
+END
+
+IDD_PAGE4 DIALOGEX 0, 0, 449, 235
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "PH-электрод :",IDC_STATIC,21,27,49,8
+    EDITTEXT        IDC_EDIT_PH_DATA,73,25,32,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Раствор 1 :",IDC_STATIC,168,63,39,8
+    LTEXT           "Раствор 2 :",IDC_STATIC,168,78,39,8
+    EDITTEXT        IDC_EDIT_PH_CALIBR_1,209,60,32,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PH_CALIBR_2,209,76,32,14,ES_AUTOHSCROLL
+    LTEXT           "Коэффициент 1 :",IDC_STATIC,22,124,58,8
+    LTEXT           "Коэффициент 2 :",IDC_STATIC,22,140,58,8
+    EDITTEXT        IDC_EDIT_LAST_K1,91,121,32,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_LAST_K2,91,138,32,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Коэффициент 1 :",IDC_STATIC,151,124,58,8
+    LTEXT           "Коэффициент 2 :",IDC_STATIC,151,140,58,8
+    EDITTEXT        IDC_EDIT_NEW_K1,219,121,32,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NEW_K2,219,138,32,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "Установленные коэффициенты :",IDC_STATIC_SET_KOEF,16,108,122,53
+    GROUPBOX        "Рассчитанные коэффициенты :",IDC_STATIC_NEW_KOEF,145,108,122,53
+    GROUPBOX        "Калибровочные растворы :",IDC_STATIC_CALIBR,161,48,105,48
+    LTEXT           "PH раствор 1 :",IDC_STATIC,21,63,50,8
+    LTEXT           "PH раствор 2 :",IDC_STATIC,21,78,50,8
+    PUSHBUTTON      "Коэффициент К 1",IDC_BUTTON_CALC_K1,77,60,71,14
+    PUSHBUTTON      "Коэффициент К 2",IDC_BUTTON_CALC_K2,77,76,71,14
+    GROUPBOX        "Рассчет коэффициентов :",IDC_STATIC_CALC_KOEF,15,48,139,48
+    LTEXT           "е.и.",IDC_STATIC,108,27,14,8
+    LTEXT           "PH",IDC_STATIC,243,78,10,8
+    LTEXT           "PH",IDC_STATIC,243,63,10,8
+    GROUPBOX        "Калибровка PH :",IDC_STATIC_CALIBR_PH,7,7,267,164
+    GROUPBOX        "Калибровка Redox :",IDC_STATIC_CALIBR_REDOX,278,7,126,164
+    LTEXT           "Redox-электрод :",IDC_STATIC,284,27,61,8
+    EDITTEXT        IDC_EDIT_REDOX_DATA,347,25,32,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "V",IDC_STATIC,382,27,8,8
+    LTEXT           "Раствор :",IDC_STATIC,312,52,33,8
+    EDITTEXT        IDC_EDIT_REDOX_CALIBR,347,48,32,14,ES_AUTOHSCROLL
+    LTEXT           "mV",IDC_STATIC,382,52,10,8
+    PUSHBUTTON      "Рассчитать K",IDC_BUTTON_CALC_K,308,147,67,14
+    LTEXT           "Коэффициент :",IDC_STATIC,289,84,52,8
+    EDITTEXT        IDC_EDIT_LAST_K,347,82,32,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Коэффициент :",IDC_STATIC,289,124,52,8
+    EDITTEXT        IDC_EDIT_NEW_K,347,122,32,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "Установленный коэффициент :",IDC_STATIC_REDOX_SET_KOEF,283,72,116,28
+    GROUPBOX        "Рассчитанный коэффициент :",IDC_STATIC_REDOX_NEW_KOEF,283,111,116,29
+END
+
+IDD_DIALOG_MAIN_OPTION DIALOGEX 0, 0, 278, 137
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Основные настройки"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "AquaController 2014",IDC_STATIC,7,126,67,8
+    CONTROL         "Запускать программу в свернутом виде",IDC_CHECK_TRAY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,28,151,10
+    CONTROL         "Автоматически сохранять изменения в EEPROM при выходе",IDC_CHECK_SAVE_EEPROM,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,47,220,10
+    CONTROL         "Автоматически синхронизировать время при запуске программы",IDC_CHECK_TIME_COMPARE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,66,236,10
+    COMBOBOX        IDC_COMBO_COM_PORT_NUM,115,102,48,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Автоматически открывать порт при запуске программы :",IDC_CHECK_COM_PORT_OPEN,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,85,211,10
+    GROUPBOX        "Укажите настройки запуска/отключения программы :",IDC_STATIC_MAIN_OPTION,7,7,264,116
+    LTEXT           "N порта :",IDC_STATIC,79,104,32,8
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 313, 192
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About AquaController 2014"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         141,IDC_STATIC,"Static",SS_BITMAP | WS_BORDER,14,14,286,97
+    LTEXT           "AquaController 2014, Version 1.0",IDC_STATIC,14,117,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2014",IDC_STATIC,7,177,114,8
+    DEFPUSHBUTTON   "OK",IDOK,256,171,50,14,WS_GROUP
+    LTEXT           "Автор - Пустоводов Станислав. e-mail: st1806@rambler.ru",IDC_STATIC,14,129,238,8,SS_NOPREFIX
+    LTEXT           "     Аппаратно-программный комплекс универсального аквариумного контроллера. Позволяет контролировать основные параметры воды в аквариуме, имеет удаленный доступ и гибкий функционал.",IDC_STATIC,14,141,292,30,SS_NOPREFIX
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_AQUACONTROL2014_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 423
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 326
+    END
+
+    IDD_PAGE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 481
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+
+    IDD_PAGE2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 405
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 196
+    END
+
+    IDD_PAGE3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 498
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 212
+    END
+
+    IDD_PAGE4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 442
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 228
+    END
+
+    IDD_DIALOG_MAIN_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 306
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 185
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PAGE1 DLGINIT
+BEGIN
+    IDC_COMBO_PORT, 0x403, 6, 0
+0x4f43, 0x204d, 0x0031, 
+    IDC_COMBO_PORT, 0x403, 6, 0
+0x4f43, 0x204d, 0x0032, 
+    IDC_COMBO_PORT, 0x403, 6, 0
+0x4f43, 0x204d, 0x0033, 
+    IDC_COMBO_PORT, 0x403, 6, 0
+0x4f43, 0x204d, 0x0034, 
+    IDC_COMBO_PORT, 0x403, 6, 0
+0x4f43, 0x204d, 0x0035, 
+    IDC_COMBO_PORT, 0x403, 6, 0
+0x4f43, 0x204d, 0x0036, 
+    IDC_COMBO_PORT, 0x403, 6, 0
+0x4f43, 0x204d, 0x0037, 
+    IDC_COMBO_PORT, 0x403, 6, 0
+0x4f43, 0x204d, 0x0038, 
+    IDC_COMBO_PORT, 0x403, 6, 0
+0x4f43, 0x204d, 0x0039, 
+    0
+END
+
+IDD_PAGE2 DLGINIT
+BEGIN
+    IDC_COMBO_PERIOD, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_PERIOD, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_PERIOD, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_PERIOD, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_PERIOD, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO_TEMP_SENSOR, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_TEMP_SENSOR, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_TEMP_SENSOR, 0x403, 2, 0
+0x0033, 
+    0
+END
+
+IDD_DIALOG_MAIN_OPTION DLGINIT
+BEGIN
+    IDC_COMBO_COM_PORT_NUM, 0x403, 6, 0
+0x4f43, 0x204d, 0x0031, 
+    IDC_COMBO_COM_PORT_NUM, 0x403, 6, 0
+0x4f43, 0x204d, 0x0032, 
+    IDC_COMBO_COM_PORT_NUM, 0x403, 6, 0
+0x4f43, 0x204d, 0x0033, 
+    IDC_COMBO_COM_PORT_NUM, 0x403, 6, 0
+0x4f43, 0x204d, 0x0034, 
+    IDC_COMBO_COM_PORT_NUM, 0x403, 6, 0
+0x4f43, 0x204d, 0x0035, 
+    IDC_COMBO_COM_PORT_NUM, 0x403, 6, 0
+0x4f43, 0x204d, 0x0036, 
+    IDC_COMBO_COM_PORT_NUM, 0x403, 6, 0
+0x4f43, 0x204d, 0x0037, 
+    IDC_COMBO_COM_PORT_NUM, 0x403, 6, 0
+0x4f43, 0x204d, 0x0038, 
+    IDC_COMBO_COM_PORT_NUM, 0x403, 6, 0
+0x4f43, 0x204d, 0x0039, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "Настройки"
+    BEGIN
+        MENUITEM "Основные настройки",          ID_RECIEVE_DATA
+    END
+    POPUP "Помощь"
+    BEGIN
+        MENUITEM "Справка",                     ID_SPRAVKA
+    END
+    POPUP "Свернуть..."
+    BEGIN
+        MENUITEM "Свернуть в Трэй",             ID_TRAY
+    END
+END
+
+IDR_POPUP_MENU MENU 
+BEGIN
+    POPUP "POPUP"
+    BEGIN
+        MENUITEM "О программе...",              ID_APP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Развернуть из трэя",          ID_DEMO_MAXIMISE
+        MENUITEM "Свернуть в трэй",             ID_DEMO_MINIMISE
+        MENUITEM SEPARATOR
+        MENUITEM "Выход",                       ID_APP_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "about.bmp"
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "AquaController 2014"
+            VALUE "FileDescription", "AquaController 2014"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "AquaController 2014.exe"
+            VALUE "LegalCopyright", "2014 (c) <PustovodovSA>.  All rights reserved."
+            VALUE "OriginalFilename", "AquaController 2014.exe"
+            VALUE "ProductName", "AquaController 2014"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About AquaController 2014..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\AquaControl2014.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,28 @@
+[OPTIONS]
+Auto Index=Yes
+Binary Index=No
+Compatibility=1.1 or later
+Compiled file=Help.chm
+Contents file=TOC.hhc
+Default Window=Navigation Pane
+Default topic=Вкладка - Ежедневные таймеры.html
+Display compile progress=No
+Full-text search=Yes
+Index file=Index.hhk
+Language=0x419 Русский (Россия)
+Title=Help
+
+[WINDOWS]
+Navigation Pane=,"TOC.hhc","Index.hhk","Вкладка - Отображение информации.html","Общее описание.html",,,,,0x63520,,0x304e,[567,132,1477,1018],,,,,,,0
+
+
+[FILES]
+Вкладка - Ежедневные таймеры.html
+Вкладка - Калибровка электродов.html
+Вкладка - Отображение информации.html
+Вкладка - Режимы.html
+Настройки программы.html
+Общее описание.html
+
+[INFOTYPES]
+
