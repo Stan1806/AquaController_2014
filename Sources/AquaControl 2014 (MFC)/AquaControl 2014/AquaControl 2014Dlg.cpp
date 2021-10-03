@@ -418,6 +418,11 @@ HCURSOR CAquaControl2014Dlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+void newCommunicationFunc(void)
+{
+	// here is a new communication functional
+}
+
 HRESULT CAquaControl2014Dlg::OnCommunication(WPARAM ch, LPARAM port)
 {
 	if(port_open)
