@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="AquaControl 2014">
+</Property><Property Name="Solution File" Value="C:\Users\user\Documents\AquaController_2014\Sources\AquaControl 2014 (MFC)\AquaControl 2014.sln">
+</Property><Property Name="User Options File" Value="C:\Users\user\Documents\AquaController_2014\Sources\AquaControl 2014 (MFC)\AquaControl 2014.suo">
+</Property><Property Name="Date" Value="18 апреля 2022 г.">
+</Property><Property Name="Time" Value="15:41">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="AquaControl 2014.sln" Description="File successfully backed up as C:\Users\user\Documents\AquaController_2014\Sources\AquaControl 2014 (MFC)\AquaControl 2014.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="AquaControl 2014.suo" Description="File successfully backed up as C:\Users\user\Documents\AquaController_2014\Sources\AquaControl 2014 (MFC)\AquaControl 2014.suo.old">
+</Event><Event ErrorLevel="0" Project="AquaControl 2014" Source="AquaControl 2014\AquaControl 2014.vcproj" Description="Converting project file 'C:\Users\user\Documents\AquaController_2014\Sources\AquaControl 2014 (MFC)\AquaControl 2014\AquaControl 2014.vcproj'.">
+</Event><Event ErrorLevel="1" Project="AquaControl 2014" Source="AquaControl 2014\AquaControl 2014.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="AquaControl 2014" Source="AquaControl 2014\AquaControl 2014.vcproj" Description="Done converting to new project file 'C:\Users\user\Documents\AquaController_2014\Sources\AquaControl 2014 (MFC)\AquaControl 2014\AquaControl 2014.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="AquaControl 2014" Source="AquaControl 2014\AquaControl 2014.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="AquaControl 2014.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="AquaControl 2014.sln" Description="Converted">
+</Event></UpgradeLog>

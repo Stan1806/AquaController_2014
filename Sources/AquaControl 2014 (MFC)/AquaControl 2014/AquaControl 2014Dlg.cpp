@@ -315,6 +315,7 @@ BOOL CAquaControl2014Dlg::OnInitDialog()
 	
 	m_slider_graf.SetRangeMin(1,false);
 	m_slider_graf.SetRangeMax(60,false);
+	m_slider_graf.SetRangeMax(60,false);
 	
 	SetTimer(0,1,NULL);
 
@@ -325,7 +326,7 @@ BOOL CAquaControl2014Dlg::OnInitDialog()
 		m_pTip->SetMaxTipWidth(200); // многострочный текст, количество символов
 		m_pTip->SetDelayTime(900); // время отображения подсказок
 		m_pTip->AddTool(&m_slider_graf,_T("Время обновления данных графика."));
-		m_pTip->AddTool(&m_edit_system_time,_T("Системное время."));
+		m_pTip->AddTool(&m_edit_system_time,_T("Системное время.")); 
 
 		m_pTip->Activate(TRUE); 
 	}

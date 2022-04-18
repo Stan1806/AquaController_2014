@@ -1,0 +1,19 @@
+Sources/AquaControl 2014 (MFC)/AquaControl 2014.opensdf
+Sources/AquaControl 2014 (MFC)/AquaControl 2014.sdf
+Sources/AquaControl 2014 (MFC)/AquaControl 2014.suo
+Sources/AquaControl 2014 (MFC)/AquaControl 2014.suo.old
+Sources/AquaControl 2014 (MFC)/AquaControl 2014/AquaControl 2014.vcxproj.user
+Sources/AquaControl 2014 (MFC)/ipch/
+Sources/AquaControl 2014 (MFC)/Debug/
+Sources/AquaControl 2014 (MFC)/Release/
+Sources/AquaControl 2014 (MFC)/AquaControl 2014/Debug/
+Sources/AquaControl 2014 (MFC)/AquaControl 2014/Release/
+Sources/AquaControl (AVR)
+Sources/Help
+Sources/P-CAD
+Sources/Proteus
+**/Debug/**
+**/Release/**
+.pdf
+.exe
+.hex
