@@ -352,7 +352,9 @@ BOOL CAquaControl2014Dlg::OnInitDialog()
 
 void dataImportFunc(void)
 {
-	//
+	m_page1.m_group_temp.SetAlignment(SS_CENTER);
+	m_page1.m_group_water_param.SetAlignment(SS_CENTER);
+	m_page1.m_group_ds1307.SetAlignment(SS_CENTER);
 }
 
 BOOL CAquaControl2014Dlg::PreTranslateMessage(MSG* pMsg) 
