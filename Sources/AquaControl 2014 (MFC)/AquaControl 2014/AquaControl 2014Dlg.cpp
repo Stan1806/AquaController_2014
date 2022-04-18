@@ -352,11 +352,10 @@ BOOL CAquaControl2014Dlg::OnInitDialog()
 
 void dataImportFunc(void)
 {
-	m_page1.m_group_temp.SetAlignment(SS_CENTER);
-	m_page1.m_group_water_param.SetAlignment(SS_CENTER);
-	m_page1.m_group_ds1307.SetAlignment(SS_CENTER);
-	///
-	///
+	m_page1.GetDlgItem(IDC_CLOSE_PORT)->EnableWindow(FALSE);
+	m_page4.GetDlgItem(IDC_BUTTON_CALC_K2)->EnableWindow(FALSE);
+	m_page2.GetDlgItem(IDC_BUTTON_POROG1)->EnableWindow(FALSE);
+	m_page2.GetDlgItem(IDC_BUTTON_POROG2)->EnableWindow(FALSE);
 }
 
 BOOL CAquaControl2014Dlg::PreTranslateMessage(MSG* pMsg) 
