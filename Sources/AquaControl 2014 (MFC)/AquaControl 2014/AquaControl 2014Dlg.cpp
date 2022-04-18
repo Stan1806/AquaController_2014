@@ -350,6 +350,11 @@ BOOL CAquaControl2014Dlg::OnInitDialog()
 	return TRUE;  // return TRUE  unless you set the focus to a control
 }
 
+void dataImportFunc(void)
+{
+	//
+}
+
 BOOL CAquaControl2014Dlg::PreTranslateMessage(MSG* pMsg) 
 {
 	//перегрузка виртуальной функции PreTranslateMessage
