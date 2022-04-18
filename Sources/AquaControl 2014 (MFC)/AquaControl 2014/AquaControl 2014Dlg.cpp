@@ -352,7 +352,9 @@ BOOL CAquaControl2014Dlg::OnInitDialog()
 
 void dataImportFunc(void)
 {
-	//
+	m_page1.m_combo_port.SetCurSel(0);
+	m_page2.m_combo_period.SetCurSel(0);
+	m_page2.m_combo_temp_sensor.SetCurSel(0);
 }
 
 BOOL CAquaControl2014Dlg::PreTranslateMessage(MSG* pMsg) 
